@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-plt.style.use('seaborn-darkgrid')
+#plt.style.use('seaborn-darkgrid')
 import seaborn as sns
 import plotly.graph_objects as go
 from statsmodels.tsa.arima.model import ARIMA
@@ -193,4 +193,4 @@ if uploaded_file:
 
 else:
     st.info("💡 Please upload an inflation dataset (CSV/JSON) in the sidebar to initialize IRIS.")
-    st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Logo_of_the_Central_Bank_of_Kenya.svg/1200px-Logo_of_the_Central_Bank_of_Kenya.svg.png", width=150)
+   
