@@ -2,7 +2,13 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-#plt.style.use('seaborn-darkgrid')
+try:
+    plt.style.use('seaborn-v0_8-darkgrid')
+except:
+    try:
+        plt.style.use('seaborn-darkgrid')
+    except:
+        plt.style.use('ggplot') # Fallback to ggplot if all else fails
 import seaborn as sns
 import plotly.graph_objects as go
 from statsmodels.tsa.arima.model import ARIMA
