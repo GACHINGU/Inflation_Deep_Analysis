@@ -309,11 +309,11 @@ LEAD SCIENTIST<br><span style="color:#c9a84c;">Stephen Munene</span><br>IRIS_v2_
     max_val    = df['inflation'].max()
 
     if abs(latest_z) > 2:
-        status = "🔴 CRITICAL"
+        status = "🔴CRITICAL"
     elif abs(latest_z) > 1:
-        status = "🟡 WARNING"
+        status = "🟡WARNING"
     else:
-        status = "🟢 STABLE"
+        status = "🟢STABLE"
 
     k1, k2, k3, k4, k5 = st.columns(5)
     k1.metric("Historical Mean (μ)", f"{mu:.2f}%")
